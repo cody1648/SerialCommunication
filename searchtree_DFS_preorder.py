@@ -31,8 +31,8 @@ class SearchTreeDFSPreorder:
             COM = "/dev/ttyUSB0"
             bitrate = 115200
 
-            with serial.Serial(COM, 9600, timeout = 0.1) as ser:
-                ser.write(b'term speed 115200\r')
+            # with serial.Serial(COM, 9600, timeout = 0.1) as ser:
+            #     ser.write(b'term speed 115200\r')
             
             ser = serial.Serial(COM, bitrate, timeout = 0.1)
             # ser.set_buffer_size(rx_size = 100000, tx_size = 100000)
